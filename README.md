@@ -6,8 +6,8 @@ Marlinctl 2.X provides an improved process management command line interface for
 
 If you wish to run the latest stable releases compiled by marlin team, please use our public release artifacts. Following is marlinctl 2.5.1 for you (which automatically upgrades to latest publically released marlinctl upon running the following).
 ```sh
-sudo wget http://public.artifacts.marlin.pro/projects/marlinctl/2.5.1/marlinctl-2.5.1-linux-amd64 --output-document=/usr/local/bin/marlinctl
-if [[ `md5sum /usr/local/bin/marlinctl | cut -d' ' -f1` == "2acbdb08c09ffadf2ce4fe57bbbd9f96" ]]; then  echo "verified md5sum" ; else echo "wrong md5sum, deleting marlinctl" && sudo rm /usr/local/bin/marlinctl;  fi
+sudo wget http://public.artifacts.marlin.pro/projects/marlinctl/2.8.0/marlinctl-2.5.1-linux-amd64 --output-document=/usr/local/bin/marlinctl
+if [[ `md5sum /usr/local/bin/marlinctl | cut -d' ' -f1` == "355db74338e5101509a03adc1f848116" ]]; then  echo "verified md5sum" ; else echo "wrong md5sum, deleting marlinctl" && sudo rm /usr/local/bin/marlinctl;  fi
 sudo chmod +x /usr/local/bin/marlinctl
 sudo marlinctl --registry-sync
 ```
